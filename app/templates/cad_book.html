@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{{url_for('book_router.static', filename='css/cad.css')}}">
+  <title>Document</title>
+</head>
+
+<body>
+  
+  <div class=" container-body">
+    <h1>Cadastro de Livros</h1>
+    <form action="/book_router/create" method="post" enctype="multipart/form-data">
+
+      <p>TITULO <input class="form-control" type="text" name="title" required><br><br>
+      <p>AUTOR <input class="form-control" type="text" name="author" required><br><br>
+      <p>PROFESSOR <input class="form-control" type="text" name="teacher" required><br><br>
+        <hr>
+      <p>PARAGRAFO 1:</p> <textarea class="form-control" id="exampleFormControlTextarea1" type="text" name="paragraph1"
+        required></textarea><br><br>
+      <p>IMAGEM 1:</p> <input class="form-control" type="file" name="photo1" id="photo1" required /><br><br>
+      <hr>
+      <p>PARAGRAFO 2:</p> <textarea class="form-control" id="exampleFormControlTextarea1" type="text" name="paragraph2"
+        required></textarea><br><br>
+      <p>IMAGEM 2:</p> <input class="form-control" type="file" name="photo2" id="photo2" required /><br><br>
+
+      <p>PARAGRAFO 3:</p> <textarea class="form-control" id="exampleFormControlTextarea1" type="text" name="paragraph3"
+        required></textarea><br><br>
+      <p>IMAGEM 3:</p> <input class="form-control" type="file" name="photo3" id="photo3" required /><br><br>
+
+      <p>PARAGRAFO 4:</p> <textarea class="form-control" id="exampleFormControlTextarea1" type="text" name="paragraph4"
+        required></textarea><br><br>
+      <p>IMAGEM 4:</p> <input class="form-control" type="file" name="photo4" id="photo4" required /><br><br>
+
+      <p>PARAGRAFO 5:</p> <textarea class="form-control" id="exampleFormControlTextarea1" type="text" name="paragraph5"
+        required></textarea><br><br>
+      <p>IMAGEM 5:</p> <input class="form-control" type="file" name="photo5" id="photo5" required /><br><br>
+
+      <p>PARAGRAFO 6:</p> <textarea class="form-control" id="exampleFormControlTextarea1" type="text" name="paragraph6"
+        required></textarea><br><br>
+      <p>IMAGEM 6:</p> <input class="form-control" type="file" name="photo6" id="photo6" required /><br><br>
+      <div class="button-submit">
+
+        <button type="submit" class="btn btn-primary"> Cadastar</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+body {
+  background: -webkit-linear-gradient(to left, #ae00ffb3, #3021fdb9);
+  background: -o-linear-gradient(to left, #ae00ffb3, #3021fdb9);
+  background: -moz-linear-gradient(to left, #ae00ffb3, #3021fdb9);
+  background: linear-gradient(to left, #ae00ffb3, #3021fdb9);
+}
+
+.container-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.content-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.btn-search{
+    background-color: rgb(0, 149, 255);
+      width: 150px;
+      height: 50px;
+      color: white;
+      font-size: 20px;
+}
+
+#button-create{
+  background-color: rgb(0, 149, 255);
+  width: 150px;
+  height: 50px;
+  color: white;
+  font-size: 20px;
+}
+
+
