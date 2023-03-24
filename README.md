@@ -6,7 +6,6 @@ Nos dois primeiros dias, busquei entender o que o desafio pedia para ter um melh
 [ ] Criação de um primeiro protótipo
 [ ] Refatorar, Estruturar e melhorar o Código.<br>
 [ ] Criação de um pequeno Frontend.<br>
-[ ] Criação da documentação.<br>
 [ ] Criação da Imagem Docker da aplicação e do banco de dados.
 
 Optei por utilizar o micro-framework Flask para realizar o desafio, uma vez que já possuía familiaridade com ele. Ao seguir as tarefas citadas anteriormente, ao pesquisar por um método para armazenar as imagens, decidi salvá-las em uma pasta e armazenar somente o PATH do arquivo no banco de dados. pois eu já havia utilizada em um projeto anterior e se mostrou eficaz. A escolha do banco de dados foi fácil, pois já sabia que utilizaria um banco de dados SQL e optei pelo ```POSTGRES``` e tambem por utilizar o ```Flask_SqlAlchemy``` como ORM.
