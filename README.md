@@ -3,7 +3,7 @@ Nos dois primeiros dias, busquei entender o que o desafio pedia para ter um melh
 
 [ ] Definição do método de armazenamento de imagens que seria utilizado.<br>
 [ ] Definição do Banco de dados que seria utilizado.<br>
-[ ] Criação de um primeiro protótipo, ```que pode ser encontrado no primeiro commit```.<br>
+[ ] Criação de um primeiro protótipo
 [ ] Refatorar, Estruturar e melhorar o Código.<br>
 [ ] Criação de um pequeno Frontend.<br>
 [ ] Criação da documentação.<br>
