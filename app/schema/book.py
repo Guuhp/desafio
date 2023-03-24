@@ -49,10 +49,8 @@ class Book(Base):
 
     def get_image_filename(self,photo,magic_code:str, image_position:str) -> str:
         hour = datetime.now().strftime('%Y-%m-%d-%H:%M:%S')
-        print(time)
         file = photo
         file.filename = f"{image_position}-{magic_code}-{hour}.jpg"
-        print(file.filename)
         file.save(os.path.join("app/static/upload", file.filename))
         return "../static/upload/" + file.filename
 

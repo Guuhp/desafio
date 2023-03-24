@@ -28,5 +28,4 @@ def create_book():
 @book_router.route('/find/<string:magic_code>')
 def find_by_magic_code(magic_code):
     book = BookService.find_by_magic_code(magic_code)
-    print(book)
     return render_template("book.html", book=book)

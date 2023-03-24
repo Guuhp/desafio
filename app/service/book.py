@@ -14,7 +14,6 @@ class BookService:
 
     @staticmethod
     def find_all() -> list:
-        print(session.query(Book).all())
         return session.query(Book).all()
 
     @staticmethod
