@@ -100,7 +100,7 @@ Durante o desenvolvimento do desafio, n√£o tive grandes problemas relacionados √
 Para Executar o desafio basta, realizar o clone do repositorio e executar o comando abaixo:
 
 ```bash
-$ docker-compose up
+$ docker-compose up --build
 ```
 <hr>
 
