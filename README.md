@@ -102,6 +102,9 @@ Para Executar o desafio basta, realizar o clone do repositorio e executar o coma
 ```bash
 $ docker-compose up --build
 ```
+> Aplicação rodando na porta 5000<br>
+>> Container Postgres na porta 5432
+
 <hr>
 
 ## Rotas do projeto
