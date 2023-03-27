@@ -98,7 +98,11 @@ Durante o desenvolvimento do desafio, n√£o tive grandes problemas relacionados √
 # Como executar o projeto
 
 Para Executar o desafio basta, realizar o clone do repositorio e executar o comando abaixo:
+```bash
+$ docker-compose up
+```
 
+caso precise mudar alguma porta no dockerfile ou no docker-compose execute: 
 ```bash
 $ docker-compose up --build
 ```
