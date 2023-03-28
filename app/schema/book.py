@@ -51,6 +51,6 @@ class Book(Base):
         hour = datetime.now().strftime('%Y-%m-%d-%H:%M:%S')
         file = photo
         file.filename = f"{image_position}-{magic_code}-{hour}.jpg"
-        file.save(os.path.join("app/static/upload/", file.filename))
+        file.save(os.path.join("app/static/upload", file.filename))
         return "../static/upload/" + file.filename
 
