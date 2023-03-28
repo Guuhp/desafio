@@ -2,56 +2,103 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="{{url_for('book_router.static', filename='css/cad.css')}}">
-  <title>Document</title>
+  <link rel="stylesheet" href="{{url_for('book_router.static', filename='css/cad.css')}}" />
+  <title>Cadastro</title>
 </head>
 
 <body>
-  
-  <div class=" container-body">
-    <h1>Cadastro de Livros</h1>
-    <form action="/book_router/create" method="post" enctype="multipart/form-data">
-
-      <p>TITULO <input class="form-control" type="text" name="title" required><br><br>
-      <p>AUTOR <input class="form-control" type="text" name="author" required><br><br>
-      <p>PROFESSOR <input class="form-control" type="text" name="teacher" required><br><br>
-        <hr>
-      <p>PARAGRAFO 1:</p> <textarea class="form-control" id="exampleFormControlTextarea1" type="text" name="paragraph1"
-        required></textarea><br><br>
-      <p>IMAGEM 1:</p> <input class="form-control" type="file" name="photo1" id="photo1" required /><br><br>
-      <hr>
-      <p>PARAGRAFO 2:</p> <textarea class="form-control" id="exampleFormControlTextarea1" type="text" name="paragraph2"
-        required></textarea><br><br>
-      <p>IMAGEM 2:</p> <input class="form-control" type="file" name="photo2" id="photo2" required /><br><br>
-
-      <p>PARAGRAFO 3:</p> <textarea class="form-control" id="exampleFormControlTextarea1" type="text" name="paragraph3"
-        required></textarea><br><br>
-      <p>IMAGEM 3:</p> <input class="form-control" type="file" name="photo3" id="photo3" required /><br><br>
-
-      <p>PARAGRAFO 4:</p> <textarea class="form-control" id="exampleFormControlTextarea1" type="text" name="paragraph4"
-        required></textarea><br><br>
-      <p>IMAGEM 4:</p> <input class="form-control" type="file" name="photo4" id="photo4" required /><br><br>
-
-      <p>PARAGRAFO 5:</p> <textarea class="form-control" id="exampleFormControlTextarea1" type="text" name="paragraph5"
-        required></textarea><br><br>
-      <p>IMAGEM 5:</p> <input class="form-control" type="file" name="photo5" id="photo5" required /><br><br>
-
-      <p>PARAGRAFO 6:</p> <textarea class="form-control" id="exampleFormControlTextarea1" type="text" name="paragraph6"
-        required></textarea><br><br>
-      <p>IMAGEM 6:</p> <input class="form-control" type="file" name="photo6" id="photo6" required /><br><br>
-      <div class="button-submit">
-
-        <button type="submit" class="btn btn-primary"> Cadastar</button>
+  <nav class="navbar" style="background-color: #2111ff">
+    <div class="container-fluid">
+      <a href="/book_router/" class="navbar-brand" style="font-size: 30px; font-weight: 500; color: white">Desafio
+        Técnico</a>
+    </div>
+  </nav>
+  <div class="container containerr">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Cadastro de Livros</h1>
+        <form action="/book_router/create" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="title">Título</label>
+            <input class="form-control" type="text" name="title" id="title" required />
+          </div>
+          <div class="form-group">
+            <label for="author">Autor</label>
+            <input class="form-control" type="text" name="author" id="author" required />
+          </div>
+          <div class="form-group">
+            <label for="teacher">Professor</label>
+            <input class="form-control" type="text" name="teacher" id="teacher" required />
+          </div>
+          <hr />
+          <div class="form-group">
+            <label for="paragraph1">Parágrafo 1:</label>
+            <textarea class="form-control" id="paragraph1" name="paragraph1" rows="3" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="photo1">Imagem 1:</label>
+            <input class="form-control" type="file" name="photo1" id="photo1" required />
+          </div>
+          <hr />
+          <div class="form-group">
+            <label for="paragraph2">Parágrafo 2:</label>
+            <textarea class="form-control" id="paragraph2" name="paragraph2" rows="3" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="photo2">Imagem 2:</label>
+            <input class="form-control" type="file" name="photo2" id="photo2" required />
+          </div>
+          <hr />
+          <div class="form-group">
+            <label for="paragraph3">Parágrafo 3:</label>
+            <textarea class="form-control" id="paragraph3" name="paragraph3" rows="3" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="photo3">Imagem 3:</label>
+            <input class="form-control" type="file" name="photo3" id="photo3" required />
+          </div>
+          <hr />
+          <div class="form-group">
+            <label for="paragraph4">Parágrafo 4:</label>
+            <textarea class="form-control" id="paragraph4" name="paragraph4" rows="3" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="photo4">Imagem 4:</label>
+            <input class="form-control" type="file" name="photo4" id="photo4" required />
+          </div>
+          <hr>
+          <div class="form-group">
+            <label for="paragraph5">Parágrafo 5:</label>
+            <textarea class="form-control" id="paragraph5" name="paragraph5" rows="3" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="photo5">Imagem 5:</label>
+            <input class="form-control" type="file" name="photo5" id="photo5" required />
+          </div>
+          <hr>
+          <div class="form-group">
+            <label for="paragraph6">Parágrafo 6:</label>
+            <textarea class="form-control" id="paragraph6" name="paragraph6" rows="3" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="photo6">Imagem 6:</label>
+            <input class="form-control" type="file" name="photo6" id="photo6" required />
+          </div>
+          <br><br>
+          <div class="button-submit">
+            <button type="submit" class="btn btn-primary">Cadastar</button>
+          </div>
+        </form>
       </div>
-    </form>
+    </div>
   </div>
 </body>
 

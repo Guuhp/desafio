@@ -30,6 +30,7 @@
     <nav class="navbar" style="background-color: #2111ff">
       <div class="container-fluid">
         <a
+          href="/book_router/"
           class="navbar-brand"
           style="font-size: 30px; font-weight: 500; color: white"
           >Desafio Técnico</a
@@ -53,24 +54,26 @@
           Criar Livro
         </button>
       </a>
-      {%for book in books%}
-      <div class="container container-content">
-        <div class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">{{book.title}}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Código: {{book.magic_code}}</h6>
-            <h6 class="card-subtitle mb-2 text-muted">Autor: {{book.author}}</h6>
-            <h6 class="card-subtitle mb-2 text-muted">Professor: {{book.teacher}}</h6>
-            <p class="card-text">
-            </p>
-            <a href="/book_router/find/{{book.magic_code}}" class="card-link">
-              <button type="button" class="btn btn-primary">Acessar Livro</button>
-            </a>
-          </div>
-        </div>
-        {%endfor%}
-      </div>
+       </div>
+  <div class="container container-content d-flex flex-row">
+  {% for book in books %}
+  <div class="card" style="width: 18rem; background-color: #F8F8F8;">
+    <div class="card-body">
+      <h5 class="card-title">{{book.title}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Código: {{book.magic_code}}</h6>
+      <h6 class="card-subtitle mb-2 text-muted">Autor: {{book.author}}</h6>
+      <h6 class="card-subtitle mb-2 text-muted">Professor: {{book.teacher}}</h6>
+      <p class="card-text">
+      </p>
+      <a href="/book_router/find/{{book.magic_code}}" class="card-link">
+        <button type="button" class="btn btn-primary">Acessar Livro</button>
+      </a>
     </div>
+  </div>
+  {% endfor %}
+</div>
+
+   
   </body>
 </html>
 
